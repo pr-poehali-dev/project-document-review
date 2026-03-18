@@ -1,61 +1,62 @@
 export default function Footer() {
   return (
     <div
-      className="relative h-[400px] sm:h-[600px] lg:h-[800px] max-h-[800px]"
+      id="contacts"
+      className="relative h-[500px] sm:h-[650px] lg:h-[850px] max-h-[850px]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="relative h-[calc(100vh+400px)] sm:h-[calc(100vh+600px)] lg:h-[calc(100vh+800px)] -top-[100vh]">
-        <div className="h-[400px] sm:h-[600px] lg:h-[800px] sticky top-[calc(100vh-400px)] sm:top-[calc(100vh-600px)] lg:top-[calc(100vh-800px)]">
-          <div className="bg-neutral-900 py-4 sm:py-6 lg:py-8 px-4 sm:px-6 h-full w-full flex flex-col justify-between">
-            <div className="flex shrink-0 gap-8 sm:gap-12 lg:gap-20">
-              <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">О нас</h3>
-                <a
-                  href="#projects"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Проекты
-                </a>
-                <a
-                  href="#mission"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Миссия
-                </a>
-                <a
-                  href="#contact"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Связаться
-                </a>
-              </div>
-              <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Обучение</h3>
-                <a
-                  href="#news"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Новости
-                </a>
-                <a
-                  href="#learn"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Курсы
-                </a>
-                <a
-                  href="#publications"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Статьи
-                </a>
+      <div className="relative h-[calc(100vh+500px)] sm:h-[calc(100vh+650px)] lg:h-[calc(100vh+850px)] -top-[100vh]">
+        <div className="h-[500px] sm:h-[650px] lg:h-[850px] sticky top-[calc(100vh-500px)] sm:top-[calc(100vh-650px)] lg:top-[calc(100vh-850px)]">
+          <div className="bg-neutral-900 py-6 sm:py-8 px-6 h-full w-full flex flex-col justify-between">
+
+            <div>
+              <p className="uppercase text-xs tracking-[0.3em] text-red-400 font-medium mb-4">Куда обращаться</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+                <div>
+                  <h3 className="text-white font-bold mb-1 text-sm sm:text-base">ФАС России</h3>
+                  <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-1">
+                    Федеральная антимонопольная служба — контролирует соблюдение закона о рекламе
+                  </p>
+                  <a href="https://fas.gov.ru" target="_blank" rel="noopener noreferrer"
+                    className="text-red-400 hover:text-red-300 text-xs sm:text-sm transition-colors">
+                    fas.gov.ru
+                  </a>
+                </div>
+                <div>
+                  <h3 className="text-white font-bold mb-1 text-sm sm:text-base">Роспотребнадзор</h3>
+                  <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-1">
+                    Защита прав потребителей — при нарушении ваших прав как покупателя
+                  </p>
+                  <a href="https://rospotrebnadzor.ru" target="_blank" rel="noopener noreferrer"
+                    className="text-red-400 hover:text-red-300 text-xs sm:text-sm transition-colors">
+                    rospotrebnadzor.ru
+                  </a>
+                </div>
+                <div>
+                  <h3 className="text-white font-bold mb-1 text-sm sm:text-base">Горячая линия</h3>
+                  <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-1">
+                    Единый консультационный центр Роспотребнадзора — бесплатно, круглосуточно
+                  </p>
+                  <a href="tel:88002000600"
+                    className="text-red-400 hover:text-red-300 text-xs sm:text-sm transition-colors font-bold">
+                    8-800-200-00-04
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0">
-              <h1 className="text-[18vw] sm:text-[16vw] lg:text-[14vw] leading-[0.8] mt-4 sm:mt-6 lg:mt-10 text-white font-bold tracking-tight">
-                LUMINO
+
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+              <h1 className="text-[13vw] sm:text-[11vw] lg:text-[9vw] leading-[0.85] text-white font-bold tracking-tight">
+                ЗАЩИТА
               </h1>
-              <p className="text-white text-sm sm:text-base">{new Date().getFullYear()} Lumino</p>
+              <div className="text-right">
+                <p className="text-neutral-400 text-xs sm:text-sm mb-1">
+                  Закон о рекламе № 38-ФЗ
+                </p>
+                <p className="text-neutral-500 text-xs">
+                  {new Date().getFullYear()} · Брошюра для потребителей
+                </p>
+              </div>
             </div>
           </div>
         </div>
